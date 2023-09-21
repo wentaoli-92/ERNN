@@ -24,12 +24,45 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 
 - Use the following command to run:
 ```
-./run @1 @2 @2 @3 @4
+./run @1 @2 @2 @3 @4 @5
 ```
-- Parameter @1 is the method name
-  - Weight (select edges with the highest weights from the graph for weight reduction.)
-  - Neighbor (select neighbors of the target vertex $f$ (if there are not enough neighbors of $f$, we choose neighbors of neighbors of $f$, and so on) and reduce the weights of the edges between vertex and the selected neighbors.)
-  - Basic (this algorithm is described in Algorithm~2, which is a standard greedy algorithm.)
-  - DBEI (this is our proposed algorithm, which is described in Algorithm~3. It uses a distance-based edge inspection technique to achieve early stopping using upper bounds.)
-  - DEBIPLUS (DBEI combined with pruning strategy 1 (Lemma~4.12), which eliminates invalid edges.)
-  - DEBISTAR (DBEIPLUS combined with pruning strategy 2 (Lemma~4.13), which eliminates dominated edges.)
+  - Parameter @1 is the method name
+    - Weight (select edges with the highest weights from the graph for weight reduction.)
+    - Neighbor (select neighbors of the target vertex $f$ (if there are not enough neighbors of $f$, we choose neighbors of neighbors of $f$, and so on) and reduce the weights of the edges between vertex and the selected neighbors.)
+    - Basic (this algorithm is described in Algorithm~2, which is a standard greedy algorithm.)
+    - DBEI (this is our proposed algorithm, which is described in Algorithm~3. It uses a distance-based edge inspection technique to achieve early stopping using upper bounds.)
+    - DEBIPLUS (DBEI combined with pruning strategy 1 (Lemma~4.12), which eliminates invalid edges.)
+    - DEBISTAR (DBEIPLUS combined with pruning strategy 2 (Lemma~4.13), which eliminates dominated edges.)
+
+  - Parameter @2 is the dataset name (stored in the data folder, without the .tmp extension)
+  - Parameter @3 is the number of facility vertices, default is 1000
+  - Parameter @4 is the number of rounds to run the experiment, where a target vertex is randomly selected for the experiment each time, default value is 50
+  - Parameter @5 is the budget, i.e. the number of edges selected for the upgrade, default value is 4
+
+- Running Example
+  - Execute the **Weight** algorithm on the test.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
+```
+./run Weight test 1000 50 4
+```
+  - Execute the **DEBI** algorithm on the CT.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
+```
+./run DEBI CT 1000 50 4
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
