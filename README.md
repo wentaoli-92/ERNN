@@ -44,9 +44,9 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 ```
 ./run DEBI test 1000 50 4
 ```
-- Execute the **Neighbor** algorithm on the CT.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
+- Execute the **Neighbor** algorithm on the BAY.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
 ```
-./run Neighbor CT 1000 50 4
+./run Neighbor BAY 1000 50 4
 ```
 
 ## Interpretation of results
