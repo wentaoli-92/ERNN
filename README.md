@@ -19,3 +19,13 @@ g++ -O3 -std=c++17 main.cpp -o run
 ```
 - All algorithms were implemented in C++ and compiled using GNU GCC 8.5.0 with optimizations at the -O3 level. 
 The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 512 GB of memory, running 64-bit Red Hat Linux 8.5.0.
+
+## Running
+
+- Use the following command to run:
+```
+./run @1 @2 @2 @3 @4
+```
+- Parameter @1 is the method name
+  - Weight (select edges with the highest weights from the graph for weight reduction.)
+  - Neighbor (select neighbors of the target vertex $$f$$ (if there are not enough neighbors of $$f$$, we choose neighbors of neighbors of $$f$$, and so on) and reduce the weights of the edges between vertex and the selected neighbors)
