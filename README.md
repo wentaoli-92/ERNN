@@ -39,12 +39,12 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
   - Parameter @4 is the number of rounds to run the experiment, where a target vertex is randomly selected for the experiment each time, default value is 50
   - Parameter @5 is the budget, i.e. the number of edges selected for the upgrade, default value is 4
 
-- Running Example
-  - Execute the **Weight** algorithm on the test.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
+## Running Example
+- Execute the **Weight** algorithm on the test.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
 ```
 ./run Weight test 1000 50 4
 ```
-  - Execute the **DEBI** algorithm on the CT.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
+- Execute the **DEBI** algorithm on the CT.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
 ```
 ./run DEBI CT 1000 50 4
 ```
