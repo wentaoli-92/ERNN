@@ -44,13 +44,17 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 ```
 ./run DEBI test 1000 50 4
 ```
-- Execute the **Neighbor** algorithm on the BAY.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
+- Execute the **DEBISTAR** algorithm on the BAY.tmp dataset with 1000 vertices as facility vertices and perform 50 rounds of experiments with a budget of 4. 
 ```
-./run Neighbor BAY 1000 50 4
+./run DEBISTAR BAY 1000 50 4
 ```
 
 ## Interpretation of results
-
+> Round : 1, targetID = 1695
+> Round : 2, targetID = 2339
+> ...
+> Round : 50, targetID = 3302
+> Average Gain = 8.66, Average Time = 0.1809
 
 
 
