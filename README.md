@@ -50,11 +50,15 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 ```
 
 ## Interpretation of results
-> Round : 1, targetID = 1695
-> Round : 2, targetID = 2339
+
+> Round : 1, targetID = 152069
+
+> Round : 2, targetID = 252656
+
 > ...
-> Round : 50, targetID = 3302
-> Average Gain = 8.66, Average Time = 0.1809
+> Round : 50, targetID = 153233
+
+> Average Gain = 204.42, Average Time = 1.30738
 
 
 
