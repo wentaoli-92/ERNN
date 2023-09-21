@@ -49,7 +49,7 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 ./run DEBISTAR BAY 1000 50 4
 ```
 
-## Interpretation of results
+## Interpretation of Results
 
 - The following is the result of executing . /run DEBISTAR BAY 1000 50 4
 
@@ -65,7 +65,7 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 
 - Where Round = 1, target = 152069 means that vertex 152069 is selected as the target facility to execute the DEBISTAR algorithm on BAY.tmp in round 1. Average Gain = 204.42 means that the average gain for 50 experiments is 204.42 and Average Time = 1.30738 means that the average run time is 1.30738 seconds.
 
-## complementary experiment
+## Additional Experiment
 - Go to the folder Index to verify Exp-9 in our paper (testing the use of indexing techniques).
   - (1) Compile by executing g++ -O3 -std=c++17 main.cpp -o run
   - (2) Run by executing ./run @2 @3 @4 @5 (note that you do not need to specify the method name via @1)
