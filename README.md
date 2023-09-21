@@ -28,4 +28,4 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 ```
 - Parameter @1 is the method name
   - Weight (select edges with the highest weights from the graph for weight reduction.)
-  - Neighbor (select neighbors of the target vertex $$f$$ (if there are not enough neighbors of $$f$$, we choose neighbors of neighbors of $$f$$, and so on) and reduce the weights of the edges between vertex and the selected neighbors)
+  - Neighbor (select neighbors of the target vertex $f$ (if there are not enough neighbors of $f$, we choose neighbors of neighbors of $f$, and so on) and reduce the weights of the edges between vertex and the selected neighbors)
