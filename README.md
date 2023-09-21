@@ -72,8 +72,8 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
   - (2) Run by executing ./run @2 @3 @4 @5 (note that you do not need to specify the method name via @1)
 - Example
 ```
-. /run test 1000 50 4
-. /run CT 1000 50 1
+./run test 1000 50 4
+./run CT 1000 50 1
 ```
 - Note that this procedure will generate temporary indexes of significant size, so be aware of disk capacity when testing.
 
