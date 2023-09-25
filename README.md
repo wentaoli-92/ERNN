@@ -69,7 +69,7 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 ## Additional Experiment
 - Go to the index folder to verify Exp-9 in our paper (testing the use of indexing techniques).
   - (1) Compile by executing g++ -O3 -std=c++17 main.cpp -o run
-  - (2) Run by executing ./run @1 @2 @3 @4 (No need to specify a budget as it is fixed at 1)
+  - (2) Run by executing ./run @1 @2 @3 @4
     - Parameter @1 is the dataset name (stored in the data folder, without the .tmp extension)
     - Parameter @2 is the number of facility vertices, default is 1000
     - Parameter @3 is the number of rounds to run the experiment, where a target vertex is randomly selected for the experiment each time, default value is 50
@@ -79,7 +79,8 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 ./run test 1000 50 1
 ./run CT 1000 50 1
 ```
-- Note that this procedure will generate temporary indexes of significant size, so be aware of disk capacity when testing.
+- No need to specify a budget as it is fixed at 1
+- Note that this procedure will generate temporary indexes of significant size, so be aware of disk capacity when testing. Reset the fourth parameter (random number seed) when the disk capacity is insufficient.
 
 
 
