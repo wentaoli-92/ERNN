@@ -80,7 +80,7 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
 ./run CT 1000 50 1
 ```
 - No need to specify a budget as it is fixed at 1
-- Note that this procedure will generate temporary indexes of significant size, so be aware of disk capacity when testing. Reset the fourth parameter (random number seed) when the disk capacity is insufficient.
+- Note that this procedure will generate temporary indexes of significant size, so be aware of disk capacity when testing. Reset the fourth parameter (random number seed) for new rounds of randomness experiments when the disk capacity is insufficient.
 
 
 
