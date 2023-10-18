@@ -30,9 +30,9 @@ The experiments were conducted on a machine with an Intel Xeon 2.50 GHz CPU and 
     - Weight (select edges with the highest weights from the graph for weight reduction.)
     - Neighbor (select neighbors of the target vertex $f$ (if there are not enough neighbors of $f$, we choose neighbors of neighbors of $f$, and so on) and reduce the weights of the edges between vertex and the selected neighbors.)
     - Basic (this algorithm is described in Algorithm 2, which is a standard greedy algorithm.)
-    - DBEI (this is our proposed algorithm, which is described in Algorithm 3. It uses a distance-based edge inspection technique to achieve early stopping using upper bounds.)
-    - DEBIPLUS (DBEI combined with pruning strategy 1 (Lemma 4.12), which eliminates invalid edges.)
-    - DEBISTAR (DBEIPLUS combined with pruning strategy 2 (Lemma 4.13), which eliminates dominated edges.)
+    - DEBI (this is our proposed algorithm, which is described in Algorithm 3. It uses a distance-based edge inspection technique to achieve early stopping using upper bounds.)
+    - DEBIPLUS (DEBI combined with pruning strategy 1 (Lemma 4.12), which eliminates invalid edges.)
+    - DEBISTAR (DEBIPLUS combined with pruning strategy 2 (Lemma 4.13), which eliminates dominated edges.)
 
   - Parameter @2 is the dataset name (stored in the data folder, without the .tmp extension)
   - Parameter @3 is the number of facility vertices, default is 1000
