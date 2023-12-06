@@ -153,22 +153,22 @@ int main(int argc, char *argv[]) {
             TotalGain += ans.first;
             TotalTime += ans.second;
         }
-        else if(method == "DEBISTAR"){
-            pair<int, double> ans = DEBISTAR(filename, poi, targetID, budget);
+        else if(method == "DBEISTAR"){
+            pair<int, double> ans = DBEISTAR(filename, poi, targetID, budget);
             //cout << ans.first << " " << ans.second << endl;
             if(ans.first <= 0 or ans.first >= 1e9) ans.first = 0;
             TotalGain += ans.first;
             TotalTime += ans.second;
         }
-        else if(method == "DEBIPLUS"){
-            pair<int, double> ans = DEBIPLUS(filename, poi, targetID, budget);
+        else if(method == "DBEIPLUS"){
+            pair<int, double> ans = DBEIPLUS(filename, poi, targetID, budget);
             //cout << ans.first << " " << ans.second << endl;
             if(ans.first <= 0 or ans.first >= 1e9) ans.first = 0;
             TotalGain += ans.first;
             TotalTime += ans.second;
         }
-        else if(method == "DEBI"){
-            pair<int, double> ans = DEBI(filename, poi, targetID, budget);
+        else if(method == "DBEI"){
+            pair<int, double> ans = DBEI(filename, poi, targetID, budget);
             //cout << ans.first << " " << ans.second << endl;
             if(ans.first <= 0 or ans.first >= 1e9) ans.first = 0;
             TotalGain += ans.first;
