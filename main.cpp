@@ -39,7 +39,7 @@ pair<int, double> Basic(string filename, vector<int> poi, int targetID, int budg
     return make_pair(gain, duration.count() * 1.0 / 1000);
 }
 
-pair<int, double> DEBI(string filename, vector<int> poi, int targetID, int budget) {
+pair<int, double> DBEI(string filename, vector<int> poi, int targetID, int budget) {
     Graph g(filename.c_str());
     g.setPOI(poi);
     g.dijkstra();
@@ -48,12 +48,12 @@ pair<int, double> DEBI(string filename, vector<int> poi, int targetID, int budge
     int gain = g.greedy(targetID, budget, Prune::Prune3);
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //cout << "DEBI: Gain = " << gain
+    //cout << "DBEI: Gain = " << gain
     //     << ", Time = " << duration.count() * 1.0 / 1000 << endl;
     return make_pair(gain, duration.count() * 1.0 / 1000); 
 }
 
-pair<int, double> DEBIPLUS(string filename, vector<int> poi, int targetID, int budget) {
+pair<int, double> DBEIPLUS(string filename, vector<int> poi, int targetID, int budget) {
     Graph g(filename.c_str());
     g.setPOI(poi);
     g.dijkstra();
@@ -62,12 +62,12 @@ pair<int, double> DEBIPLUS(string filename, vector<int> poi, int targetID, int b
     int gain = g.greedy(targetID, budget, Prune::Prune1 | Prune::Prune3);
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //cout << "DEBIPLUS: Gain = " << gain
+    //cout << "DBEIPLUS: Gain = " << gain
     //     << ", Time = " << duration.count() * 1.0 / 1000 << endl;
     return make_pair(gain, duration.count() * 1.0 / 1000); 
 }
 
-pair<int, double> DEBISTAR(string filename, vector<int> poi, int targetID, int budget) {
+pair<int, double> DBEISTAR(string filename, vector<int> poi, int targetID, int budget) {
     Graph g(filename.c_str());
     g.setPOI(poi);
     g.dijkstra();
@@ -77,7 +77,7 @@ pair<int, double> DEBISTAR(string filename, vector<int> poi, int targetID, int b
                         Prune::Prune1 | Prune::Prune2 | Prune::Prune3);
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
-    //cout << "DEBISTAR: Gain = " << gain
+    //cout << "DBEISTAR: Gain = " << gain
     //     << ", Time = " << duration.count() * 1.0 / 1000 << endl;
     return make_pair(gain, duration.count() * 1.0 / 1000);
 }
